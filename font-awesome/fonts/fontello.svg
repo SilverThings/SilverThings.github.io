@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="blogger" unicode="&#xe800;" d="m550 850l-300-1c-128-18-237-97-246-231-3-13-2-25-2-37-2-59-1-122-1-182 1-96-2-173 0-244 1-209 124-306 348-302 55 1 119 1 192-1 72 0 128-5 177 2 221 31 264 179 273 299l0 137c-6 140-108 178-194 181 9 35 12 82 3 146-10 124-98 221-250 233z m-251-187l245 0c135-18 129-164 0-185l-245 0c-135 18-129 164 0 185z m-56-404l450-2c136-17 136-183 5-203l-450 2c-139 17-137 182-5 203z" horiz-adv-x="991" />
+<glyph glyph-name="blogger-rect" unicode="&#xe801;" d="m196 850c-108 0-196-88-196-196l0-608c0-108 88-196 196-196l608 0c108 0 196 88 196 196l0 608c0 108-88 196-196 196l-608 0z m338-187c94-8 149-68 155-146 5-40 4-70-2-91 54-2 116-26 120-113l0-86c-5-75-32-168-169-188-31-4-65-1-110-1-45 1-85 1-119 0-139-2-216 59-216 190-1 44 0 93 0 152 0 38-1 78 0 115 1 7 0 15 1 23 6 84 74 133 153 144l187 1z m-156-117c-80-13-84-105 0-116l152 0c80 13 84 105 0 116l-152 0z m-35-253c-82-13-83-117 3-127l279-1c82 12 82 116-3 127l-279 1z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

@@ -47,6 +47,7 @@ p {
 
 a {
     color: #486aa3;
+    /* font-weight: bold; */
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -55,7 +56,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: white;
 }
 
 .light {
@@ -292,7 +293,7 @@ a:focus {
     }
 
     .download-section {
-        padding: 100px 0;
+        padding-top: 50px;
     }
 }
 
@@ -374,4 +375,16 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.page-header {
+	border: 0px;
+}
+
+.mail-link {
+	font-weight: bold;
+}
+
+.mail-link:hover, .mail-link:focus {
+	color: #eee;
 }

@@ -19,6 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/fontello.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -59,10 +60,13 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#features">Features</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contribute</a>
+                        <a class="page-scroll" href="#usage">Usage</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contribute">Contribute</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +80,7 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-lg-12">
                         <h1 class="brand-heading">Silverspoon.io</h1>
                         <p class="intro-text">Simplistic IoT Platform</p>
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -90,111 +94,118 @@
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
-        <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
+                <h2 class="page-header">
                     Welcome to Silverspoon.io
-                </h1>
-                <p>OpenSource IoT Platform. A member of <a href="http://www.silverware.io" target="_blank">SilverWare</a> family.</p>
-                <p>Silverspoon.io aims to provide users with an easy-to-use, though enterprise-ready, IoT platform. Its basic building block is Apache Camel with our custom Camel GPIO Component, allowing users to integrate capabilities of embedded devices with external IT systems, support event-based decision making, or to deploy user applications to IoT gateways as microservices.</p>
-            </div>
-            <!-- TODO: Separate section: Features-->
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Bulldog Library</h4>
-                    </div>
-                    <div class="panel-body">
-						<img class="panel-image" src="img/rpi.jpg" />
-                        <p>Bulldog is a Java library providing Java (IoT) developers with GPIO and low-level IO capabilities of embedded linux platforms (BeagleBoneBlack, RaspberryPi, CubieBoard). It's supposed to expose an object-oriented and easy-to-use API offering access to the underlying hardware (GPIOs, I2C, SPI, PWM, etc.).</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Apache Camel</h4>
-                    </div>
-                    <div class="panel-body">
-						<img class="panel-image" src="img/camel.png" />
-                        <p>We have developed a pluggable component for Apache Camel, a light-weight integration framework. This allows us to easily integrate various parts and functionalities of embedded linux platforms using well-known Enterprise Integration Patterns.</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Web Based IDE</h4>
-                    </div>
-                    <div class="panel-body">
-						<img class="panel-image" src="img/ide.png" />
-                        <p></p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
+                </h2>
+                <p>Silverspoon.io is an open source project and a member of the <a href="http://www.silverware.io" target="_blank">SilverWare</a> family.</p>
+                <p>Aim of this project is to provide users with an easy-to-use development platform for creating complex IoT solutions. <br/>
+                The basic building block of Silverspoon.io is Apache Camel, a light-weight integration framework based on well known Enterprise Integration Patterns. 
+                With Apache Camel, we are able to easily integrate capabilities of embedded devices with external IT systems, or support rule and event based decision making.</p>
             </div>
         </div>
-        <!-- TODO: See it in action -->
-        <!--
-        
-        Java IoT Platform
+    </section>
 
-
-        
-        
-        Camel GPIO Component
-
-
-        
-        Bulldog Library
-
-
-        
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+    <section id="features" class="content-section text-center">
+        <div class="features-section">
+            <div class="container">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Features</h2>
+                </div>
+                
+                <div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-fw fa-terminal"></i> Bulldog Library</h4>
+						</div>
+						<div class="panel-body">
+							<img class="panel-image" src="img/rpi.jpg" />
+							<p>Java library providing developers with GPIO and low-level IO capabilities of embedded linux platforms like I2C, SPI, or PWM. Currently supports  Raspberry Pi, BeagleBoneBlack and CubieBoard.</p>
+							<a href="#" class="btn btn-default">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-fw fa-sitemap"></i> Apache Camel</h4>
+						</div>
+						<div class="panel-body">
+							<img class="panel-image" src="img/camel.png" />
+							<p>Silverspoon.io consists of several pluggable component for Apache Camel. This allows us to easily integrate various parts and functionalities of IoT Gateways with other systems.</p>
+							<a href="#" class="btn btn-default">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-fw fa-desktop"></i> Web Based IDE</h4>
+						</div>
+						<div class="panel-body">
+							<img class="panel-image" src="img/ide.png" />
+							<p>We expect the IDE to be based on Hawt.io and to support developing custom Camel application in a web browser, as well as generating recommended wiring diagrams.</p>
+							<a href="#" class="btn btn-default">Learn More</a>
+						</div>
+					</div>
+				</div>
             </div>
-        </div> -->
+        </div>
     </section>
 
     <!-- Download Section -->
-    <!-- TODO: Getting started guide -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <section id="usage" class="content-section text-center">
+        <div class="usage-section">
             <div class="container">
                 <div class="col-lg-12">
-                    <h2>Download</h2>
-                    <p></p>
-                    <a href="https://github.com/px3/silverspoon/archive/master.zip" class="btn btn-default btn-lg">Visit Download Page</a>
-                    <!-- TODO: Add some guide, tutorial, slides, ... -->
+                    <h2 class="page-header">Usage</h2>
+                    <p>PAGE UNDER CONSTRUCTION.
+						<!--You can start using Silverspoon.io platform simply by following these steps:
+						<ol>
+							<li>
+								Download/Checkout latest version: <pre>git clone http://</pre>
+							</li>
+						</ol> -->
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contribute" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Contribute to Silverspoon.io</h2>
-                <!-- <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a></p> -->
+                <h2 class="page-header">Contribute to Silverspoon.io</h2>
+                
+                <p>
+					We higly appreciate any form of contribution to Silverspoon.io project, either by sending a pull request fixing a bug or implementing a new feature, or just by reporting some bug you are experiencing. 
+					Ideas for improvements and new features are very welcomed, as well! Explore our issue trackers for more information: 
+				</p>
+                
+                <ul class="list-inline">
+				  <li>
+					<a href="https://github.com/px3/silverspoon/issues" class="btn btn-default btn-lg" id="silverspoon-issues" target="_blank">Silverspoon.io <span class="badge">0 issues</span></a>
+				  </li>
+				  <li>
+					<a href="https://github.com/px3/bulldog/issues" class="btn btn-default btn-lg" id="bulldog-issues" target="_blank">Bulldog Library <span class="badge">0 issues</span></a>
+				  </li>
+				</ul>
+                
+                <p>Feel free to email us to provide some feedback on our endeavor, give us suggestions on how to make the world a better place, or to just say hello.</p>
+                <p> <a class="mail-link" href="mailto:silverspoon@ssilverware.io">silverspoon@silverware.io</a></p>
+                
                 <ul class="list-inline banner-social-buttons">
-                    <!-- <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>-->
                     <li>
                         <a href="https://github.com/px3/silverspoon" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
-                    <!-- <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li> -->
+                    <li>
+                        <a href="https://twitter.com/silverwareio" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://silverwareio.blogspot.com" class="btn btn-default btn-lg"><i class="icon-blogger-rect"></i> <span class="network-name">Blogger</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -219,6 +230,9 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
+	<!-- iPhone scaling fix -->
+	<script src="js/scale.fix.js"></script>
+	<script src="js/ga.js"></script>
 </body>
 
 </html>

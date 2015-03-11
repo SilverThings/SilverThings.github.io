@@ -28,3 +28,12 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// GitHub issue counter
+$.get( "https://api.github.com/repos/px3/silverspoon/issues?state=open", function( data ) {
+	$("#silverspoon-issues .badge")[0].innerHTML = data.length + ' Open Issues';
+});
+
+$.get( "https://api.github.com/repos/px3/bulldog/issues?state=open", function( data ) {
+	$("#bulldog-issues .badge")[0].innerHTML = data.length + ' Open Issues';
+});
