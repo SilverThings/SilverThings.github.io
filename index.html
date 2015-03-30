@@ -78,9 +78,9 @@
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="">
                         <h1 class="brand-heading">Silverspoon.io</h1>
                         <p class="intro-text">Simplistic IoT Platform</p>
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -99,7 +99,7 @@
                 <h2 class="page-header">
                     Welcome to Silverspoon.io
                 </h2>
-                <p>Silverspoon.io is an open source project and a member of the <a href="http://www.silverware.io" target="_blank">SilverWare</a> family.</p>
+                <p>Silverspoon.io is an open source project and a member of the <a href="http://www.silverware.io" class="mail-link" target="_blank">SilverWare</a> family.</p>
                 <p>Aim of this project is to provide users with an easy-to-use development platform for creating complex IoT solutions. <br/>
                 The basic building block of Silverspoon.io is Apache Camel, a light-weight integration framework based on well known Enterprise Integration Patterns. 
                 With Apache Camel, we are able to easily integrate capabilities of embedded devices with external IT systems, or support rule and event based decision making.</p>
@@ -121,8 +121,8 @@
 						</div>
 						<div class="panel-body">
 							<img class="panel-image" src="img/rpi.jpg" />
-							<p>Java library providing developers with GPIO and low-level IO capabilities of embedded linux platforms like I2C, SPI, or PWM. Currently supports  Raspberry Pi, BeagleBoneBlack and CubieBoard.</p>
-							<a href="https://github.com/px3/bulldog" class="btn btn-default">Learn More</a>
+							<p>Java library providing developers with GPIO and low-level IO capabilities of embedded linux platforms like I2C, SPI, or PWM. Currently supports  <a class="mail-link" href="">Raspberry Pi</a>, <a class="mail-link" href="">BeagleBoneBlack</a>, and <a class="mail-link" href="">CubieBoard</a>.</p>
+							<a href="https://github.com/px3/bulldog" class="btn btn-default">Explore More</a>
 						</div>
 					</div>
 				</div>
@@ -133,8 +133,8 @@
 						</div>
 						<div class="panel-body">
 							<img class="panel-image" src="img/camel.png" />
-							<p>Silverspoon.io consists of several pluggable component for Apache Camel. This allows us to easily integrate various parts and functionalities of IoT Gateways with other systems.</p>
-							<a href="http://camel.apache.org" class="btn btn-default">Learn More</a>
+							<p>Silverspoon.io consists of several pluggable component for <a class="mail-link" href="http://camel.apache.org">Apache Camel</a>&trade;. This allows us to easily integrate various parts and functionalities of IoT Gateways with other systems.</p>
+							<a href="http://github.com/px3/silverspoon" class="btn btn-default">Explore More</a>
 						</div>
 					</div>
 				</div>
@@ -145,8 +145,8 @@
 						</div>
 						<div class="panel-body">
 							<img class="panel-image" src="img/ide.png" />
-							<p>We expect the IDE to be based on Hawt.io and to support developing custom Camel application in a web browser, as well as generating recommended wiring diagrams.</p>
-							<a href="https://github.com/px3/silverspoon/issues/13" class="btn btn-default">Learn More</a>
+							<p>We expect the IDE to be based on <a class="mail-link" href="http://hawt.io">Hawt.io</a> and to support development of custom Camel applications in a web browser, as well as generation of recommended wiring diagrams.</p>
+							<a href="https://github.com/px3/silverspoon/issues/13" class="btn btn-default">Explore More</a>
 						</div>
 					</div>
 				</div>
@@ -160,25 +160,30 @@
             <div class="container">
                 <div class="col-lg-12">
                     <h2 class="page-header">Usage</h2>
-                    <p>PAGE UNDER CONSTRUCTION.</p>
-                    <!--
-                    <p>You can start using Silverspoon.io platform simply by following these steps:
-						<ol>
-							<li>
-								Use Silverspoon.io archetype to generate a new maven project on your favourite single board computer: <pre>git clone http://</pre>
+                    <!-- <p>PAGE UNDER CONSTRUCTION.</p>-->
+                    
+                    <p>We prepared a maven archetype for you to quickly get started usign Silverspoon.io. To setup your maven project execute the following steps on your Raspberry Pi:
+						<ul class="list-group tutorial">
+							<li class="list-group-item">
+								Use Silverspoon.io archetype to generate a new maven project: 
+<pre>mvn archetype:generate \
+	-DarchetypeGroupId=io.silverspoon \
+	-DarchetypeArtifactId=silverspoon-archetype-led \
+	-DarchetypeVersion=0.1.1
+</pre>
 							</li>
-							<li>
-								Connect a LED diode to it and put the Pin name to... src/main/resources/gpio.properties
+							<li class="list-group-item">
+								Connect a LED diode to your computer and put the GPIO Pin name to <pre>src/main/resources/gpio.properties</pre>
 							</li>
-							<li>
-								Execute <pre>mvn camel:run</pre> and watch your LED blink.
+							<li class="list-group-item">
+								Now you can start controlling your LED via REST interface by executing: <pre>mvn camel:run</pre>
 							</li>
-						</ol>
+						</ul>
                     </p>
                     <p>
-						For more tutorials visit our <a class="mail-link" href="https://github.com/px3/silverspoon/wiki">wiki</a>
+						For more tutorials and guides please visit our <a class="mail-link" href="https://github.com/px3/silverspoon/wiki">wiki</a>
 						 or <a class="mail-link" href="https://silverwareio.blogspot.com">blog</a>.
-					</p> -->
+					</p>
                 </div>
             </div>
         </div>
@@ -195,7 +200,7 @@
 					Ideas for improvements and new features are very welcomed, as well! Explore our issue trackers for more information: 
 				</p>
                 
-                <ul class="list-inline">
+				<ul class="list-inline issue-list">
 				  <li>
 					<a href="https://github.com/px3/silverspoon/issues" class="btn btn-default btn-lg" id="silverspoon-issues" target="_blank">Silverspoon.io <span class="badge">0 issues</span></a>
 				  </li>

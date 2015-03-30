@@ -69,6 +69,7 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #486aa3;
+    /* display: none; */
 }
 
 .navbar-custom .navbar-toggle {
@@ -134,19 +135,30 @@ a:focus {
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
-        text-shadow: 1px 1px 1px #486aa3;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .navbar-custom.top-nav-collapse {
+		display: block;
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #486aa3;
-        text-shadow: 0px;
     }
 }
+
+@media(min-width:768px) {
+    .navbar-custom .container {
+        display: none;
+    }
+
+    .top-nav-collapse .container {
+		display: table;
+    }
+}
+
+
 
 .intro {
     display: table;
@@ -184,11 +196,17 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     .intro .intro-body .intro-text {
         font-size: 26px;
+    }
+}
+
+@media(min-width:900px) {
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
     }
 }
 
@@ -271,7 +289,28 @@ a:focus {
 }
 
 .content-section .panel-image {
-	height: 15em;
+	margin-bottom: 10px;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media(min-width:990px) {
+	.content-section .panel-body p {
+		height: 14em; 
+	}
+}
+
+@media(min-width:1200px) {
+	.content-section .panel-body p {
+		height: 10em; 
+	}
+}
+
+
+.content-section .panel-body p {
+	font-size: 18px;
 }
 
 .download-section {
@@ -334,6 +373,7 @@ ul.banner-social-buttons {
 }
 
 @media(max-width:767px) {
+    
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
@@ -353,28 +393,12 @@ footer p {
     margin: 0;
 }
 
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
 img::selection {
     background: 0 0;
 }
 
 img::-moz-selection {
     background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
 .page-header {
@@ -387,4 +411,22 @@ body {
 
 .mail-link:hover, .mail-link:focus {
 	color: #eee;
+}
+
+.tutorial {
+	/*width: 40em;*/
+	text-align: justify;
+	font-size: 18px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+@media(max-width:768px) {
+	.tutorial {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+.issue-list a {
+	margin-bottom: 20px;
 }
