@@ -160,8 +160,7 @@
             <div class="container">
                 <div class="col-lg-12">
                     <h2 class="page-header">Usage</h2>
-                    <!-- <p>PAGE UNDER CONSTRUCTION.</p>-->
-                    
+                                        
                     <p>We prepared a maven archetype for you to quickly get started using Silverspoon.io. To setup your maven project execute the following steps on your Raspberry Pi:
 						<ul class="list-group tutorial">
 							<li class="list-group-item">
@@ -209,8 +208,23 @@
 				  </li>
 				</ul>
                 
-                <p>Feel free to email us to provide some feedback on our endeavor, give us suggestions on how to make the world a better place, or to just say hello.</p>
-                <p> <a class="mail-link" href="mailto:silverspoon@silverware.io">silverspoon@silverware.io</a></p>
+                <p>Feel free to email us to provide some feedback on our endeavor, give us suggestions on how to make the world a better place, or to just say hello:</p>
+                <!-- <p> <a class="mail-link" href="mailto:silverspoon@silverware.io">silverspoon@silverware.io</a></p> -->
+                
+                <form method="post" action="http://formspree.io/silverspoon@silverware.io" id="email-form">
+					<div class="form-group">
+						<label class="sr-only" for="name">Name</label><input type="text" class="form-control" name="name" id="name" placeholder="Name" /> 
+					</div>
+					
+					<div class="form-group">
+						<label class="sr-only" for="email">Email address</label><input type="email" class="form-control" name="email" id="email" placeholder="E-mail" />
+					</div>
+					
+					<div class="form-group">
+						<textarea class="form-control" rows="7" name="message" id="message" placeholder="Message"></textarea>
+					</div>
+					<button type="submit" class="btn btn-default btn-lg">Submit</button>
+				</form>
                 
                 <ul class="list-inline banner-social-buttons">
                     <li>

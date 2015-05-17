@@ -421,6 +421,19 @@ img::-moz-selection {
 	padding-right: 20%;
 }
 
+#contribute .form-control {
+	font-size: 18px;
+	font-style: italic;
+}
+
+@media(min-width:768px) {
+	#email-form {
+		padding-bottom: 3em;
+		padding-left: 10em;
+		padding-right: 10em;
+	}
+}
+
 @media(max-width:768px) {
 	.tutorial {
 		padding-left: 5%;
