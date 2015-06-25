@@ -293,24 +293,27 @@ a:focus {
 	vertical-align: middle;
 	max-width: 100%;
 	height: auto;
-	display: block;
+	/* display: block; */
 }
 
 @media(min-width:990px) {
 	.content-section .panel-body p {
 		height: 14em; 
+		text-align: center;
 	}
 }
 
 @media(min-width:1200px) {
 	.content-section .panel-body p {
 		height: 10em; 
+		text-align: center;
 	}
 }
 
 
 .content-section .panel-body p {
 	font-size: 18px;
+	text-align: center;
 }
 
 .download-section {
