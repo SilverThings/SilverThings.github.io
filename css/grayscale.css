@@ -292,6 +292,7 @@ a:focus {
 	margin-bottom: 10px;
 	vertical-align: middle;
 	max-width: 100%;
+	max-height: 16em;
 	height: auto;
 	/* display: block; */
 }
