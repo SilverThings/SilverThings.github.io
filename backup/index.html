@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portable IoT Platform">
+    <meta name="author" content="sbunciak">
+
+    <title>Silverspoon.io</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/fontello.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Home</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#usage">Usage</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contribute">Contribute</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="">
+                        <h1 class="brand-heading">Silverspoon.io</h1>
+                        <p class="intro-text">Portable IoT Platform</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">
+                    Welcome to Silverspoon.io
+                </h2>
+                <p>Silverspoon.io is an open source project and a member of the <a href="http://www.silverware.io" class="mail-link" target="_blank">SilverWare</a> family.</p>
+                <p>Aim of this project is to provide users with an easy-to-use development platform for creating complex IoT solutions. <br/>
+                The basic building block of Silverspoon.io is Apache Camel, a light-weight integration framework based on well known Enterprise Integration Patterns. 
+                With Apache Camel, we are able to easily integrate capabilities of embedded devices with external IT systems, or support rule and event based decision making.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="content-section text-center">
+        <div class="features-section">
+            <div class="container">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Features</h2>
+                </div>
+                
+                <div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-fw fa-terminal"></i> Bulldog Library</h4>
+						</div>
+						<div class="panel-body">
+							<img class="panel-image" src="img/rpi.jpg" />
+							<p>Java library providing developers with GPIO and low-level IO capabilities of embedded linux platforms like I<sup>2</sup>C, SPI, or PWM. Currently supports  <a class="mail-link" href="http://raspberrypi.org/">Raspberry Pi</a>, <a class="mail-link" href="http://beagleboard.org/black">BeagleBoneBlack</a>, and <a class="mail-link" href="http://cubieboard.org">CubieBoard</a>.</p>
+							<a href="https://github.com/px3/bulldog" class="btn btn-default">Explore More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-fw fa-sitemap"></i> Apache Camel</h4>
+						</div>
+						<div class="panel-body">
+							<img class="panel-image" src="img/camel.png" />
+							<p>Our project is providing pluggable components for <a class="mail-link" href="http://camel.apache.org">Apache Camel</a>&trade;. This allows us to easily integrate with projects like <a class="mail-link" href="https://github.com/rhiot">Rhiot</a>, or any Apache Camel-based systems.</p>
+							<a href="http://github.com/px3/silverspoon" class="btn btn-default">Explore More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-fw fa-desktop"></i> Web Based IDE</h4>
+						</div>
+						<div class="panel-body">
+							<img class="panel-image" src="img/ide.png" />
+							<p>We expect the IDE to be based on <a class="mail-link" href="http://hawt.io">Hawt.io</a> and to support development of custom Camel applications in a web browser, as well as generation of recommended wiring diagrams.</p>
+							<a href="https://github.com/px3/silverspoon/issues/13" class="btn btn-default">Explore More</a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="usage" class="content-section text-center">
+        <div class="usage-section">
+            <div class="container">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Usage</h2>
+                                        
+                    <p>We prepared a maven archetype for you to quickly get started using Silverspoon.io. To setup your maven project execute the following steps on your Raspberry Pi:
+						<ul class="list-group tutorial">
+							<li class="list-group-item">
+								Use Silverspoon.io archetype to generate a new maven project: 
+<pre>mvn archetype:generate \
+	-DarchetypeGroupId=io.silverspoon \
+	-DarchetypeArtifactId=silverspoon-archetype-led \
+	-DarchetypeVersion=0.2.0
+</pre>
+							</li>
+							<li class="list-group-item">
+								Connect a LED diode to your computer and put the GPIO Pin name to <pre>src/main/resources/gpio.properties</pre>
+							</li>
+							<li class="list-group-item">
+								Now you can start controlling your LED via REST interface by executing: <pre>mvn camel:run</pre>
+							</li>
+						</ul>
+                    </p>
+                    <p>
+						To learn more about our archetypes please visit our <a class="mail-link" href="https://github.com/px3/silverspoon">github</a>
+						 or <a class="mail-link" href="https://silverwareio.blogspot.com">blog</a>.
+					</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contribute" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Contribute to Silverspoon.io</h2>
+                
+                <p>
+					We higly appreciate any form of contribution to Silverspoon.io project, either by sending a pull request fixing a bug or implementing a new feature, or just by reporting some bug you are experiencing. 
+					Ideas for improvements and new features are very welcomed, as well! Explore our issue trackers for more information: 
+				</p>
+                
+				<ul class="list-inline issue-list">
+				  <li>
+					<a href="https://github.com/px3/silverspoon/issues" class="btn btn-default btn-lg" id="silverspoon-issues" target="_blank">Silverspoon.io <span class="badge">0 issues</span></a>
+				  </li>
+				  <li>
+					<a href="https://github.com/px3/bulldog/issues" class="btn btn-default btn-lg" id="bulldog-issues" target="_blank">Bulldog Library <span class="badge">0 issues</span></a>
+				  </li>
+				</ul>
+                
+                <p>Feel free to email us to provide some feedback on our endeavor, give us suggestions on how to make the world a better place, or to just say hello:</p>
+                <!-- <p> <a class="mail-link" href="mailto:silverspoon@silverware.io">silverspoon@silverware.io</a></p> -->
+                
+                <form method="post" action="http://formspree.io/silverspoon@silverware.io" id="email-form">
+					<div class="form-group">
+						<label class="sr-only" for="name">Name</label><input type="text" class="form-control" name="name" id="name" placeholder="Name" /> 
+					</div>
+					
+					<div class="form-group">
+						<label class="sr-only" for="email">Email address</label><input type="email" class="form-control" name="email" id="email" placeholder="E-mail" />
+					</div>
+					
+					<div class="form-group">
+						<textarea class="form-control" rows="7" name="message" id="message" placeholder="Message"></textarea>
+					</div>
+					<button type="submit" class="btn btn-default btn-lg">Submit</button>
+				</form>
+                
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://github.com/px3/silverspoon" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/silverwareio" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://silverwareio.blogspot.com" class="btn btn-default btn-lg"><i class="icon-blogger-rect"></i> <span class="network-name">Blogger</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Silverspoon.io 2015</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+	<!-- iPhone scaling fix -->
+	<script src="js/scale.fix.js"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-58152940-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+
+</html>
