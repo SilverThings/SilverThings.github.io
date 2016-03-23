@@ -102,7 +102,7 @@ public class BulldogLED {
     Board board = Platform.createBoard();
     
     // Set up a digital output
-    List<Pin> pins = board.getPins();
+    List&lt;Pin&gt; pins = board.getPins();
     DigitalOutput output = pins.get(0).as(DigitalOutput.class);
     
     // Blink the LED
