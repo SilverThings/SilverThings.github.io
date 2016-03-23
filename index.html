@@ -15,7 +15,7 @@
 		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 		<link rel="icon" href="img/favicon.ico">
 		<!-- jQuery -->
-    	<script src="js/jquery.js"></script>
+    		<script src="js/jquery.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<!-- highlight.js -->
 		<link rel="stylesheet" href="css/hl-github.css">
@@ -59,7 +59,7 @@
 
 							<p>Silverspoon.io is an open source project and a member of the <a href="http://www.silverware.io" class="mail-link" target="_blank">SilverWare</a> family. Aim of this project is to provide users with an easy-to-use development platform for creating complex IoT solutions. </p>
 
-			                <p>The basic building block of Silverspoon is <a class="mail-link" href="http://camel.apache.org">Apache Camel</a>&trade;, a light-weight integration framework based on well known Enterprise Integration Patterns, for which we are providing a pluggable component. With Apache Camel, we are able to easily integrate capabilities of embedded devices with external IT systems, or support rule and event based decision making.</p>
+			                		<p>The basic building block of Silverspoon is <a class="mail-link" href="http://camel.apache.org">Apache Camel</a>&trade;, a light-weight integration framework based on well known Enterprise Integration Patterns, for which we are providing a pluggable component. With Apache Camel, we are able to easily integrate capabilities of embedded devices with external IT systems, or support rule and event based decision making.</p>
 							
 							<h2>Example</h2>
 							<pre>
@@ -102,8 +102,8 @@ public class BulldogLED {
     Board board = Platform.createBoard();
     
     // Set up a digital output
-    List<Pin> pins = board.getPins()
-    DigitalOutput output = board.pins(0).as(DigitalOutput.class);
+    List<Pin> pins = board.getPins();
+    DigitalOutput output = pins.get(0).as(DigitalOutput.class);
     
     // Blink the LED
     output.high();
